@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  color: #444;
+  background-color: #fff;
+}
+
+#app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+  height: 100vh;
+}
+
+.counter_container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.counter_container svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.counter_data-container {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
+  gap: 0.5rem;
+}
+
+.counter_container p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  #app {
+    flex-direction: column;
+  }
+}
